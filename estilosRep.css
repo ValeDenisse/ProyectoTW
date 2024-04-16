@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Reemplaza 400 con el peso de fuente deseado */
+  font-style: normal;
+}
+
+.header2 {
+    background-color: black;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    display: inline;
+}
+
+.menu .navbar ul li a{
+    font-size: 10 px;
+    padding: 20px;
+    color: white;
+    display: inline;
+    font-weight: 400;
+}
+
+
+.menu .navbar ul li a:hover{
+    color: darkgoldenrod;
+}
+
+.menuFooter li{
+    display: inline;
+}
+
+#menu{
+    display: none;
+}
+
+.menu_icon{
+    width: 25%;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.menu_icon {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    margin-left: 16px;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.5 10.5'><polygon points='13.5,10.5 0,10.5 0,0 13.5,0'/></svg>") no-repeat center;
+    background-size: cover;
+}
+
+.Repertoire1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Img {
+    display: flex;
+    justify-content: center;
+}
+
+.Img table {
+    margin: 0 auto; /* Add this line to center the table horizontally */
+    margin-left: auto;
+    margin-right: 0;
+    border-collapse: collapse;
+}
+
+.Img th,
+.Img td {
+    border: none;
+    padding: 12px;
+    text-align: left;
+}
+
+.Img img {
+    width: 100%;
+    height: auto;
+}
+
+.Repertoire1 h1 {
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 768px) { 
+    #menu:checked ~.navbar ul {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* ROLES DEL ARCTOR*/
+
+.Roles {
+    background-color:black;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .RolesActor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .RolesActor h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .RolesActor table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .RolesActor th,
+  .RolesActor td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .RolesActor th {
+    background-color:black;
+    font-weight: normal;
+  }
+  
+  .RolesActor tr:nth-child(even) {
+    background-color:black;
+  }
+  
+  /* FIN DE ROLES DEL ACTOR*/
+
+  /* UPCOMINGSHOW*/
+
+  .UpcomingShow {
+    background-color:black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Show_aproximado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 150vh;
+  }
+  
+  .Show_aproximado img {
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .Show_info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Show_info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .Show_info p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .Buy_tickets {
+    background-color: #050505;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .Buy_tickets:hover {
+    background-color:chocolate;
+  }
+  
+  .Date {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #666;
+  }
+
+  /* FIN UPCOMINGSHOW*/
+
+  /* INICIO TOURS*/
+
+  .ToursFechas {
+    background-color:black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Tours {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .Tours h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .Tours h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .Tours_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .Tours_info_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .Tours_info_1_item {
+    margin-bottom: 20px;
+  }
+  
+  .Tours_info_1_item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .Tours_info_1_item p {
+    font-size: 14px;
+    color:white;
+  }
+
+  /* FIN TOURSFECHAS*/
+
+  /* INICIO STSYUPDATED*/
+
+  .StayUpdate {
+    background-color:black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Mantente_actualizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .Mantente_actualizado h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .Mantente_actualizado h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #fdfafa;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  .input-wrapper button {
+    width: 300px;
+    height: 40px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .input-wrapper button:hover {
+    background-color:black;
+  }
+  
+  .Mantente_actualizado h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .Menu_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .menuFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menuFooter li {
+    margin: 0 10px;
+  }
+  
+  .menuFooter a {
+    color:white;
+  text-decoration: none;
+  }
+  
+  .menuFooter a:hover {
+    color: white;
+  }

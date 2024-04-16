@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Reemplaza 400 con el peso de fuente deseado */
+  font-style: normal;
+}
+
+.header2 {
+    background-color: black;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    display: inline;
+}
+
+.menu .navbar ul li a{
+    font-size: 10 px;
+    padding: 20px;
+    color: white;
+    display: inline;
+    font-weight: 400;
+}
+
+
+.menu .navbar ul li a:hover{
+    color: darkgoldenrod;
+}
+
+.menuFooter li{
+    display: inline;
+}
+
+#menu{
+    display: none;
+}
+
+.menu_icon{
+    width: 25%;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.menu_icon {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    margin-left: 16px;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.5 10.5'><polygon points='13.5,10.5 0,10.5 0,0 13.5,0'/></svg>") no-repeat center;
+    background-size: cover;
+}
+
+/* INICIO CONTACTOS*/
+
+.Contactos {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Contactos h1{
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+  
+
+  .contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.contact-table th,
+.contact-table td {
+    padding: 1rem;
+    text-align: left;
+}
+
+.contact-table th {
+    background-color:black;
+    font-weight: bold;
+}
+
+.contact-table td {
+    font-size: 1.125rem;
+}
+
+/*FIN CONTACTO*/
+
+/*INICIO MAPA Y MENSAJE*/
+
+.InfoCon{
+    display: flex;
+    height: 100vh;
+    background-color: black;
+}
+
+#map {
+    width: 60%;
+    height: 100%;
+}
+
+.form {
+    width: 40%;
+    background-color:black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form h2 {
+    margin-top: 0;
+    color: white;
+}
+.form p{
+    color: white;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="subject"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="subject"]:focus {
+    outline: none;
+    box-shadow: 0 0 2px 1px #007bff;
+}
+
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 2px 1px #007bff;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+/* FIN IMAGEN Y ENVIARMENSAJE*/
+
+/* INICIO STAYUPDATE*/
+
+.StayUpdate {
+    background-color:black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Mantente_actualizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .Mantente_actualizado h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .Mantente_actualizado h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #fdfafa;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  .input-wrapper button {
+    width: 300px;
+    height: 40px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .input-wrapper button:hover {
+    background-color:black;
+  }
+  
+  .Mantente_actualizado h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .Menu_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .menuFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menuFooter li {
+    margin: 0 10px;
+  }
+  
+  .menuFooter a {
+    color:white;
+  text-decoration: none;
+  }
+  
+  .menuFooter a:hover {
+    color: white;
+  }
+  
